@@ -1,2 +1,13 @@
-ajsdflkjaslkdfjalksjdflajdlfjalksdjflajsdflkjalkdsjflaksjdflkajsdlkfjasldjfakljsdflkjasdjf
-alksdjflajdfklajdslf;ajsdflkjaslkdfjalksjdflajdlfjalksdjflajsdflkjalkdsjflaksjdflkajsdlkfjasldjfakljsdflkjasdjf
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 12px 0;
+    margin-top: 40px;
+}
