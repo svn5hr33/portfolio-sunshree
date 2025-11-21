@@ -1,13 +1,128 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
 body {
     font-family: Arial, sans-serif;
-    background: #fafafa;
+    background: #ffe6f2; 
     color: #333;
-    line-height: 1.6;
 }
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Header */
+header {
+    background: #ffb3d9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Titles */
+h2 {
+    margin-bottom: 10px;
+    color: #cc0066;
+}
+
+/* Profile Photo */
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px 0;
+    border: 3px solid #ffb3d9;
+}
+
+/* Horizontal Projects */
+.projects-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 48%;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ffb3d9;
+    border-radius: 6px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Name + Email side by side */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ffa3d6;
+    border-radius: 5px;
+}
+
+/* Button */
+form button {
+    padding: 10px;
+    background: #ff99cc;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+form button:hover {
+    background: #ff85c1;
+}
+
+
 footer {
     text-align: center;
-    background: #222;
+    background: #ffb3d9;
     color: white;
-    padding: 12px 0;
-    margin-top: 40px;
+    padding: 10px 0;
+    margin-top: 30px;
 }
+.project-card img {
+    width: 100%;      
+    height: auto;      
+    display: block;     
+}
+
