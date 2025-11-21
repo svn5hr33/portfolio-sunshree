@@ -5,21 +5,17 @@
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: Arial, sans-serif;
     background: #ffe6f2; 
     color: #333;
 }
 
-/* Container */
 .container {
     width: 90%;
     max-width: 800px;
     margin: 30px auto;
 }
-
-/* Header */
 header {
     background: #ffb3d9;
     padding: 20px 0;
@@ -42,13 +38,11 @@ header nav ul li a {
     font-weight: bold;
 }
 
-/* Titles */
 h2 {
     margin-bottom: 10px;
     color: #cc0066;
 }
 
-/* Profile Photo */
 .profile-photo {
     width: 140px;
     height: 140px;
@@ -58,28 +52,42 @@ h2 {
     border: 3px solid #ffb3d9;
 }
 
-/* Horizontal Projects */
+
 .projects-row {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .project-card {
-    width: 48%;
     background: white;
     padding: 15px;
     border: 1px solid #ffb3d9;
     border-radius: 6px;
+    flex: 1 1 30%;  /* 3 cards per row */
+    box-sizing: border-box;
+    min-width: 220px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Contact Form */
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
 form {
     display: flex;
     flex-direction: column;
 }
 
-/* Name + Email side by side */
 .form-row {
     display: flex;
     gap: 15px;
@@ -97,7 +105,7 @@ form textarea {
     border-radius: 5px;
 }
 
-/* Button */
+
 form button {
     padding: 10px;
     background: #ff99cc;
@@ -112,7 +120,6 @@ form button:hover {
     background: #ff85c1;
 }
 
-
 footer {
     text-align: center;
     background: #ffb3d9;
@@ -120,9 +127,3 @@ footer {
     padding: 10px 0;
     margin-top: 30px;
 }
-.project-card img {
-    width: 100%;      
-    height: auto;      
-    display: block;     
-}
-
